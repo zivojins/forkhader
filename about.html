@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="breinrock, international banking, finance, finance solutions, global payments">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="background.css">
+
+    <link rel="icon" href="imgs/icons/relicon.png">
+    <title>Breinrock</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .item1 {
+        background-color: #080c1c;
+        border-radius: 15px;
+        border: 1px solid #2596be;
+        transition: 0.6s;
+    }
+    .item1:hover {
+        background-color: #2596be !important;
+        transition: 0.6s;
+    }
+
+</style>
+<body>
+    <div class="gradient-bg">
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logomain" src="imgs/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white" href="#" id="productsDropdown" role="button" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark bg-black" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                <li><a class="dropdown-item" href="corporate.html">Corporate and Personal Accounts</a></li>
+                                <li><a class="dropdown-item" href="prepaid.html">Prepaid Cards</a></li>
+                                <li><a class="dropdown-item" href="foreign.html">Foreign Exchange</a></li>
+                                <li><a class="dropdown-item" href="baas.html">BaaS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+    
+    <svg width="0" height="0">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                <feColorMatrix in="blur" mode="hardLight" values="0 0 0 0 0
+                                                                 0 0 0 0 0
+                                                                 0 0 0 0 0
+                                                                 0 0 0 10 -10" result="coloredBlur" />
+                <feMerge>
+                    <feMergeNode in="SourceGraphic" />
+                    <feMergeNode in="coloredBlur" />
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+    <section id="aboutmain">
+        <div style="margin-top: 10%;" class="container">
+            <div class="row">
+                <div class="mt-5">
+                    <h1 class="text-white" style="font-size: 5.0rem; font-weight: 800;" id="mainabout-title">About Us
+                    </h1>
+                    <p style="font-size: 2.4rem;" class="text-white">At Breinrock, we go beyond offering fintech payment
+                        solutions. We tailor financial journeys to your needs, with a focus on both personal and
+                        corporate accounts.
+
+                    </p>
+                </div>
+            </div>
+            <div style="width: 100%;" class="text-center mt-5">
+                <p class="text-white">Explore More</p>
+                <a href="#licences"><img style="width: 45px;" src="imgs/icons/arrowdown.png"></a>
+            </div>
+        </div>
+    </section>
+    <section id="licences">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 licences-left">
+                    <h2 class="text-white" style="font-size: 3.2rem;">Licences</h2>
+                    <p class="text-white">The Breinrock Group holds several licenses and permissions globally, either
+                        directly or indirectly through our partners, which enable us to offer payment services.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 licences-right carousel-div">
+                    <div id="licenceCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+    
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="text-center">
+                                    <p class="text-white">Breinrock Ltd is registered in Canada with address 100 King Street West Suite 5700, Toronto fully licensed with FINTRAC license number M20573902</p>
+                                    <img src="imgs/licenses/can.png" class="d-block mx-auto" alt="Licence 1">
+                                </div>
+                            </div>
+    
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <p class="text-white">Breinrock is a distributor of E-Settlements, a company registered in England and Wales with address 73 Mornington Street, London, NW1 7QE, company number 12685703, which
+                                        is authorized and regulated by the FCA, license number
+                                        FRN929896</p>
+                                    <img src="imgs/licenses/uk.png" class="d-block mx-auto" alt="Licence 2">
+                                </div>
+                            </div>
+    
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <p class="text-white">Breinrock DIFC Tech limited is registered in UAE, with address
+                                        at Emirates Financial Tower S21109, DIFC, Dubai under trade license CL5927</p>
+                                    <img src="imgs/licenses/uae.png" class="d-block mx-auto" alt="Licence 3">
+                                </div>
+                            </div>
+    
+                            <!-- Slide 4 -->
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <p class="text-white">Breinrock S.R.O is registered in Czech Republic, headquartered
+                                        at Evropská 2758/11, Dejvice, 160 00 Prague 6, under license 043 86 329</p>
+                                    <img src="imgs/licenses/eu.png" class="d-block mx-auto" alt="Licence 4">
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#licenceCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#licenceCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <hr style="background: #fff;" class="mt-5 mb-5">
+    </div>
+   <section id="breinrockteam">
+    <div class="container-fluid">
+        <p style="font-size: 1.9rem;" class="text-white text-center pt-4 pb-5">MEET THE TEAM</p>
+        <div class="row d-flex align-items-center justify-content-between team-row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row1-1.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">CEO / FOUNDER</p>
+                <p style="font-size: 1.3rem; font-weight: bold;" class="pt-2 text-white">Zoran Radovanovic</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row1-2.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">RELATIONSHIPS MANAGER</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Yiota Saulescu</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row1-3.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">ONBOARDING MANAGER</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Tatyana Doncheva
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row1-4.png">
+                <p style="font-size: 0.9rem;" class="pt-4 text-white">BUSINESS DEVELOPMENT MANAGER</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Stefanos Chris Nicolas
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex align-items-center justify-content-between team-row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row2-1.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">HEAD OF COMPLIENCE</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Miljana Delic
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row2-2.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">OPERATIONS MANAGER</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Lana Radmanovic
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row2-3.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">ONBOARDING SPECIALIST</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Ksenia Krytsun
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row2-4.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">MARKETING MANAGER</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Khader Sbeitani
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex align-items-center justify-content-between team-row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row3-1.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">PAYMENT SPECIALIST</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Katerina Lekka
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row3-2.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">RELATIONSHIP MANAGER</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Ivana Stepanovic
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row3-3.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">DEPUTY OF HEAD PAYMENTS</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Ivana Nikic
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row3-4.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">DIRECTOR - DUBAI OFFICE</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Ivan Mladenovic
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex align-items-center justify-content-between team-row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row4-1.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">PAYMENT SPECIALIST</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Helen Eter
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row4-2.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">VP OF PARTNERSHIPS</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Erdem Yasar
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row4-3.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">HEAD OF RISK MANAGEMENT</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Bojana Simic</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img class="img-fluid" src="imgs/team/row4-4.png">
+                <p style="letter-spacing: 1.5px;" class="pt-4 text-white">VP OF BUSINESS DEVELOPMENT</p>
+                <p style="font-size: 1.3rem; font-weight: bold;"  class="pt-2 text-white">Andrew Thomas
+                </p>
+            </div>
+        </div>
+    </div>
+   </section>
+    
+   <div class="container">
+    <hr style="background: #fff;" class="mt-5 mb-5">
+</div>
+    <section id="experience">
+        
+
+        <div style="margin-top: 7%;" class="container-fluid">
+            <h2 class="text-center text-white pb-4" style="font-size: 3.5rem; font-weight: 800;">Trust Our Experience!</h2>
+            <div class="row d-flex align-items-center justify-content-around">
+                
+                <div class="col-lg-5 col-md-5 pt-4 col-sm-12 item item1">
+                    <div class="above d-flex align-items-center">
+                        <img src="imgs/mainaboutimgs/cardimgs/cardicon1.png" class="img-fluid me-3 pl-4 pt-3" style="max-width: 100px;"
+                            alt="Line Image">
+                        <p class="text-white m-0"><b>Innovation</b></p>
+                    </div>
+                    <p class="p-3 text-white">Elevate your financial experience with our state-of-the-art solutions, including multicurrency accounts andtop-notch foreign exchange services. Stay ahead in the financial game with Breinrock's evolving offerings.</p>
+                </div>
+                <div class="col-lg-5 col-md-5 pt-4 col-sm-12 item item1">
+                    <div class="above d-flex align-items-center">
+                      <img src="imgs/mainaboutimgs/cardimgs/cardicon2.png" class="img-fluid me-3 pl-4 pt-3" style="max-width: 100px;" alt="Line Image">
+                      <p class="text-white m-0"><b>Client Focused:</b></p>
+                    </div>
+                    <p class="p-3 text-white">Breinrock is committed to building long-lasting relationships by delivering tailored payment and banking solutions that closely align with the unique and evolving needs of our clients. Our dedication lies in understanding our clients, ensuring we provide personalized and reliable services to foster trust and satisfaction.</p>
+                  </div>
+            </div>
+
+            <div class="row mt-5 d-flex align-items-center justify-content-around">
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 item item1">
+                    <div class="above d-flex align-items-center">
+                        <img src="imgs/mainaboutimgs/cardimgs/cardicon3.png" class="img-fluid me-3 pl-4 pt-3" style="max-width: 100px;"
+                            alt="Line Image">
+                        <p class="text-white m-0"><b>Years of Experience</b></p>
+                    </div>
+                    <p class="p-3 text-white">Benefit from our team’s extensive experience in banking and payment solutions. We merge valuable industry insights with a personalized approach to navigate you through the intricacies of the financial world.</p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 item item1">
+                    <div class="above d-flex align-items-center">
+                      <img src="imgs/mainaboutimgs/cardimgs/cardicon4.png" class="img-fluid me-3 pl-4 pt-3" style="max-width: 100px;" alt="Line Image">
+                      <p class="text-white m-0"><b>Committed</b></p>
+                    </div>
+                    <p class="p-3 text-white">Our pride at Breinrock is in transforming every financial obstacle into an opportunity for success. We are committed to building lasting relationships by delivering tailored payment and banking solutions that closely align with our clients' unique needs.</p>
+                  </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-10 col-md-10 col-sm-11 contactwrapper text-center">
+                    <div class="contactcontent text-center">
+                        <p style="font-size: 1.4rem;" class="text-white pt-4 pt-2 text-center">WHY DON'T WE GET IN TOUCH?</p>
+                        <h2 style="font-weight: 700; font-size: 2.1rem;" class="text-white missiontitle">Ready to start your Breinrock journey?</h2>
+                        <a id="contactexpand" href="#" class="button contactbutton button1">CONTACT US</a>
+                    </div>
+                    <!-- Hidden form -->
+                    <div class="contactform-container">
+                        <form id="contactform">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Your Message" required></textarea>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: rgb(12, 13, 41);" class="text-white mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <img style="width: 150px;" class="logo" src="imgs/logo.png" alt="Logo">
+                </div>
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <p><b>Start a conversation:</b></p>
+                    <p>welcome@breinrock.com</p>
+                </div>
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <p><b>Find Our Locations:</b></p>
+                    <div class="mt-5 location">
+                        <p>100 King Street West, Suite 5700</p>
+                        <p>Toronto M5X 1C7 ON Canada</p>
+                    </div>
+                    <div class="mt-5 location">
+                        <p>73 Mornington Street</p>
+                        <p>NW1 7QE London, UK</p>
+                    </div>
+                    <div class="mt-5 location">
+                        <p>35 Thekla Lysiotis, Eagle Star</p>
+                        <p>House, 5th Floor 501, 3030</p>
+                        <p>Limassol, Cyprus</p>
+                    </div>
+                    <div class="mt-5 location">
+                        <p>Emirates Financial Tower, S2109,</p>
+                        <p>DIFC, Dubai, UAE</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="newsletter mt-5">
+                        <p><b>Newsletter</b></p>
+                        <div class="newsletterform">
+                            <p class="text-white">Subscribe to our newsletter to hear about our updates and
+                                events.</p>
+                            <input type="email" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="policies mt-5 mb-3">
+            <a href="cookiepolicy.html">Cookie Policy</a>
+            <a href="privacypolicy.html">Privacy Policy</a>
+            <a href="legal.html">Legal</a>
+            <p>&copy; 2024 Breinrock, All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="animation.js"></script>
+    <script src="background.js"></script>
+    <script src="mouseparticles.js"></script>
+    
+</body>
+
+</html>

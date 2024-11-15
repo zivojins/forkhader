@@ -1,0 +1,537 @@
+/* Keyframes for moving from left to right */
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to the gradient image */
+.gradienthome {
+    animation: moveLeftToRight 1s ease-out forwards; /* Start immediately on page load */
+}
+
+
+
+
+/* Ensure the left-side content starts animating immediately */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation for left-side content */
+.left-home h1, .left-home p, .button-wrap a {
+    opacity: 0; /* Ensure elements are hidden initially */
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+.left-home h1 {
+    animation-delay: 0.2s;
+}
+
+.left-home p {
+    animation-delay: 0.4s;
+}
+
+.button-wrap a {
+    animation-delay: 0.6s;
+}
+
+/* Animation for the right-side image */
+@keyframes slideInFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.right-home img {
+    animation: slideInFadeIn 1s ease-out forwards;
+}
+
+
+/* Keyframes for scaling up */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); /* Scale up slightly */
+    }
+}
+
+/* Keyframes for scaling down */
+@keyframes scaleDown {
+    0% {
+        transform: scale(1.07); /* Start scaled up */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the default style */
+
+/*COLABS ANIMATIONS*/
+/* Keyframes for fade-in and slide-up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to text and images */
+.colabs-content,
+.colabs-imgs img {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start position */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions */
+}
+
+.animate {
+    opacity: 1; /* End state */
+    transform: translateY(0); /* End position */
+}
+
+/*COLABS ANIMATIONS END*/
+/*MISSION*/
+.missionwrapper {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1.6s ease, opacity 1.6s ease, box-shadow 1.6s ease;
+    box-shadow: 0px 0px 0px rgba(62, 116, 214, 0); /* Initially no shadow */
+}
+
+.missionwrapper.animate {
+    transform: translateX(0);
+    opacity: 1;
+    box-shadow: 0px 0px 70px 10px rgba(62, 116, 214, 0.4); /* The box shadow you want */
+}
+
+.missioncontent p, .missioncontent h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.missioncontent p.animate, .missioncontent h2.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add a stagger effect */
+.missioncontent p.animate {
+    transition-delay: 0.2s;
+}
+
+.missioncontent h2.animate {
+    transition-delay: 0.4s;
+}
+
+/*MISSION END*/
+
+
+/*BENEFITS ANIMATIONS
+/* Initial state of the content */
+.half {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animated state */
+.half.animate-benefit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*BENEFITS ANIMATIONS END*/
+
+
+/*ROCK AND PAY ANIM*/
+/* Ensure the benefits container is visible */
+.cards-right .benefits {
+    display: flex;
+    flex-direction: column; /* Stack benefits vertically */
+    opacity: 1; /* Ensure it's fully visible */
+    transform: translateY(0); /* No initial translation */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Smooth transition for animation */
+}
+
+/* Ensure benefit items are visible and styled properly */
+.benefit1, .benefit2, .benefit3 {
+    display: flex;
+    align-items: center;
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* No initial translation */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth transition for animation */
+}
+
+.benefit1 img, .benefit2 img, .benefit3 img {
+    max-width: 24px; /* Adjust icon size if needed */
+    height: auto;
+}
+
+.benefit1 p, .benefit2 p, .benefit3 p {
+    margin-left: 10px; /* Adjust spacing if needed */
+}
+
+/* Initial state for animation */
+.cards-left img {
+    opacity: 0;
+    transform: translateX(-50px) rotate(-10deg); /* Initial position and rotation */
+    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+.cards-right h2, .cards-right p, .cards-right .benefits {
+    opacity: 0;
+    transform: translateY(20px); /* Initial position */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.cards-right .benefits .benefit1, .cards-right .benefits .benefit2, .cards-right .benefits .benefit3 {
+    opacity: 0;
+    transform: translateY(20px); /* Initial position for animation */
+}
+
+/* Animation when the section is in the viewport */
+.cards-left.animate img {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg); /* Final position and rotation */
+}
+
+.cards-right.animate h2 {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+    transition-delay: 0.2s;
+}
+
+.cards-right.animate p {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+    transition-delay: 0.4s;
+}
+
+.cards-right.animate .benefits {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+}
+
+.cards-right.animate .benefits .benefit1 {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+    transition-delay: 0.6s;
+}
+
+.cards-right.animate .benefits .benefit2 {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+    transition-delay: 0.8s;
+}
+
+.cards-right.animate .benefits .benefit3 {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+    transition-delay: 1s;
+}
+
+
+/* Define the floating and rotating animation */
+@keyframes floatAndRotate {
+    0% {
+        transform: translateY(0) rotate(0deg); /* Start at original position and rotation */
+    }
+    25% {
+        transform: translateY(-10px) rotate(2deg); /* Move up and rotate right */
+    }
+    50% {
+        transform: translateY(0) rotate(-2deg); /* Return to original vertical position and rotate left */
+    }
+    75% {
+        transform: translateY(-10px) rotate(2deg); /* Move up and rotate right */
+    }
+    100% {
+        transform: translateY(0) rotate(0deg); /* Return to original position and rotation */
+    }
+}
+
+/* Apply the floating and rotating animation to the image */
+.cards-left img {
+    animation: floatAndRotate 6s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+/*ROCK AND PAY ANIM END*/
+
+
+
+/*CONTACT ANIMATION*/
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contactwrapper {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start position */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .contactwrapper.in-view {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up to its final position */
+  }
+  
+  .contactbtn {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Start lower than the text */
+    transition: opacity 0.6s ease-out 0.4s, transform 0.6s ease-out 0.4s;
+  }
+  
+  .contactbtn.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Slide up to its final position */
+  }
+/*CONTACT ANIMATION END*/
+
+
+
+/* Make the header sticky */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+header.menu-expanded {
+    background-color: rgb(12, 13, 41); /* Your desired color */
+}
+.navbar-nav .nav-link {
+    transition: color 0.5s ease;
+}
+
+/* Initially, keep the background transparent and text white */
+.header-transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header-scrolled {
+    background-color: rgb(13, 14, 41) ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(62, 116, 214);
+}
+
+.header-scrolled .nav-link {
+    color: #fff !important;
+}
+/* Style for the hamburger menu in default state (white icon) */
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* When the header is scrolled, change the hamburger menu to black */
+
+  
+/*ABOUT ANIMATION
+/* About Us section animation */
+#aboutmain {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Arrow up-and-down animation */
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Moves arrow down */
+    }
+    100% {
+        transform: translateY(0); /* Moves arrow back up */
+    }
+}
+
+#aboutmain img {
+    animation: upDown 2.5s ease-in-out infinite;
+}
+
+
+/* Initial state (hidden) */
+#licences {
+    opacity: 0;
+    transform: translateY(50px); /* Move it slightly down */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth animation */
+}
+
+/* When section is in viewport */
+#licences.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Move it back to its original position */
+}
+
+
+/*ABOUT US EXPERIENCE*/
+/* Initial hidden state for cards and text */
+#experience .item {
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#experience h2 {
+    opacity: 0;
+    transform: translateY(30px); /* Subtle downward movement */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When section is in the viewport */
+#experience.in-view .item, 
+#experience.in-view h2 {
+    opacity: 1;
+    transform: translateY(0); /* Return to original position */
+}
+
+/* Stagger effect for each card */
+#experience.in-view .item:nth-child(1) { transition-delay: 0.2s; }
+#experience.in-view .item:nth-child(2) { transition-delay: 0.4s; }
+#experience.in-view .item:nth-child(3) { transition-delay: 0.6s; }
+#experience.in-view .item:nth-child(4) { transition-delay: 0.8s; }
+
+
+.item1 {
+    transition: 0.6s;
+}
+
+
+/*PRODUCTS*/
+/* Initial state for animation */
+.corporate-accounts {
+    opacity: 0; /* Hidden by default */
+    transform: translateY(50px); /* Start lower */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition for smooth effect */
+}
+
+/* Final state for animation */
+.corporate-accounts.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+/* Initial state for animation */
+.foreignexhcange {
+    opacity: 0; /* Hidden by default */
+    transform: translateY(50px); /* Start lower */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition for smooth effect */
+}
+
+/* Final state for animation */
+.foreignexhcange.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+/* Particle container */
+.contact-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Make particles non-interactive */
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.1;
+    
+    animation: drift 15s linear infinite;
+}
+
+/* Particle animation */
+@keyframes drift {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        /* Move particles in random directions */
+        transform: translate(var(--x-movement), var(--y-movement));
+        opacity: 0.2;
+    }
+    100% {
+        /* Reset to initial */
+        transform: translate(0, 0);
+        opacity: 0.3;
+    }
+}
+
+
+
+/* Animation styles */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply initial styles */
+.team-row div {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Animated class */
+.team-row div.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+

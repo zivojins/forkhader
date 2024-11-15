@@ -1,0 +1,49 @@
+@media(max-width: 768px) {
+    .laptophome {
+        overflow: visible;
+        width: 100%;
+        height: auto;
+    }
+    .colabimgs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1%;
+    }
+    .buttonwrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .button {
+        width: 100%;
+    }
+    .right-benefits {
+        margin-top: 4%;
+    }
+    
+    .left-corporate {
+        margin-top: 15%;
+    }
+    .team-row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        text-align: center; /* Center text */
+    }
+
+    .team-row .col-sm-12 {
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+
+    .team-row img {
+        margin: 0 auto; /* Center the images */
+        max-width: 80%; /* Adjust the image size for smaller screens */
+    }
+
+    .team-row p {
+        text-align: center; /* Center the text */
+    }
+}
+
+
